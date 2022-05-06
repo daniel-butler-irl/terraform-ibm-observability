@@ -1,4 +1,4 @@
-package test
+package tests
 
 import (
 	"testing"
@@ -6,7 +6,7 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
 
-// An example of how to test the Terraform module to create cos instance in examples/instance using Terratest.
+// An example of how to tests the Terraform module to create cos instance in examples/instance using Terratest.
 func TestAccIBMObComplete(t *testing.T) {
 	t.Parallel()
 
@@ -25,10 +25,10 @@ func TestAccIBMObComplete(t *testing.T) {
 		},
 	})
 
-	// At the end of the test, run `terraform destroy` to clean up any resources that were created
+	// At the end of the tests, run `terraform destroy` to clean up any resources that were created
 	defer terraform.Destroy(t, terraformOptions)
 
-	// This will run `terraform init` and `terraform apply` and fail the test if there are any errors
+	// This will run `terraform init` and `terraform apply` and fail the tests if there are any errors
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the value of an output variable
