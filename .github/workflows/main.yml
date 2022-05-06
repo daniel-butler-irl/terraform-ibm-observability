@@ -53,4 +53,4 @@ jobs:
 
       # Run tests
       - name: Run Tests
-        run: make run-tests
+        run: make run-tests-local
