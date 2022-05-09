@@ -13,6 +13,7 @@ on:
 
 env:
   TF_VAR_ibmcloud_api_key: ${{ secrets.IBMCLOUD_API_KEY }}
+  IC_API_KEY: ${{ secrets.IBMCLOUD_API_KEY }}
   ARTIFACTORY_USERNAME: "danielbu@ie.ibm.com"
   ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_TOKEN }}
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
