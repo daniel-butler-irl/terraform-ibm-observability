@@ -21,7 +21,7 @@ func TestAccIBMObComplete(t *testing.T) {
 			"logging_name":          "logging",
 			"activity_tracker_name": "at",
 			"monitoring_name":       "sysdig",
-			"resource_group":        "default",
+			"resource_group":        "Default",
 		},
 	})
 
